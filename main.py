@@ -43,7 +43,7 @@ def process_files():
                 text = fa.read()
 
             idx = text.find('nm	Data')
-            text = text[idx:].replace('nm	Data\n', 'Wavelength	F.I.\nnm	a.u.\n')
+            text = text[idx:].replace('nm	Data\n', 'Wavelength	FL Intensity\nnm	a.u.\n')
 
             with open(outfile, 'w') as fb:
                 fb.write(text)
